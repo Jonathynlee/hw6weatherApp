@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="headerRow row">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-3 search">
+            <!-- Search Area -------------------->
+            <div class = "searchBarRow row">
+                <div class = "searchText"><p>Search for a City:</p></div>
+                <div class = "searchBarWrapper row">
+                <input id = "searchBar" value = "'City Name'">
+                <button id = "searchButton" onclick="addCity()">
+                    <img class = "magImg" src="images/magGlass.png">
+                </button>
+            </div>
+            </div>
+            <div id  = "results" class = "row">
+                <div id = "savedCities">
+
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="col-md-9 mainContentCol">
+            <div class="currentTempRow">
+                <div id = "cityDate"></div>
+                <div id = "temperature">Temperature: </div>
+                <div id = "humidity">Humidity: </div>
+                <div id = "windSpeed">Wind Speed:</div>
+                <div id = "UVIndex"><p>UV Index:</p> 
+                    <div id="UVBox"> </div>
+                </div>
+                
+            </div>
+            <div class="forcastTempRow">
+                <div class = "row">
+                <h3>5-Day Forecast:</h3>
+            </div>
+                <div class = "forcastContent row">
+                    
+                        <div class = "forcastBox" id= "1"></div>
+                    
+                    
+                        <div class = "forcastBox" id= "2"></div>
+                
+                    
+                        <div class = "forcastBox" id= "3"></div>
+                    
+                    
+                        <div class = "forcastBox" id= "4"></div>
+                    
+                    
+                        <div class = "forcastBox" id= "5"></div>
+                    
+                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
